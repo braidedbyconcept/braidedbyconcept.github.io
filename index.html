@@ -177,7 +177,7 @@ body { background: #201e1f; background-image: none; }
 					
 					
 					
-					
+<!--					
 <p>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
     Toggle width collapse
@@ -190,7 +190,7 @@ body { background: #201e1f; background-image: none; }
     </div>
   </div>
 </div>																
-					
+-->					
 					
 					
 					
@@ -200,6 +200,8 @@ body { background: #201e1f; background-image: none; }
 			<input type="text" id="jump-to-top" style="display:none;height:10px;width:10px;border:none;background:transparent;opacity:0;overflow:hidden;">
 
 			<div class="pane pick-appointment-pane">
+				
+	<button class="back-button" type="button" id="btnViewAll"><i class="fa fa-chevron-left"></i>View all appointments</button>				
 				
 					<div class="select select-category">
         <button class="back-button" type="button"><i class="fa fa-chevron-left"></i>View all categories</button>
@@ -1328,9 +1330,28 @@ $(document).ready(function(){
 	//alert("smash it!");
   });
   $("#btnWeaves").click(function(){
-    	//$("#btnWeaves").hide();
+    	$("#btnWeaves").hide();
+	$("#categoryType-1-container").hide();
+	$("#categoryType-2-container").hide();
+	$("#categoryType-3-container").hide();
+	$("#categoryType-4-container").hide();	 
+	$("#categoryType-0-container").hide();		  
 	//alert("smash it!");
-  });	
+  });
+  $("#btnViewAll").click(function(){    	
+	$("#categoryType-1-container").show();
+	$("#categoryType-2-container").show();
+	$("#categoryType-3-container").show();
+	$("#categoryType-4-container").show();	 
+	$("#categoryType-0-container").show();		  
+	$("#categoryType-5-container").show();
+	$("#btnBrooklyn").show();
+	$("#btnBraids").show();
+	$("#btnLocs").show();
+	$("#btnStitch").show();
+	$("#btnTwists").show();
+	$("#btnWeaves").show();
+  });		
   
 });
 </script>	
