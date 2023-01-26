@@ -209,7 +209,7 @@ body { background: #201e1f; background-image: none; }
                     <label for="categoryType-0" tabindex="0">
                         <span class="appointment-type-name">1. Brooklyn</span>
                     </label>
-                    <button class="btn btn-primary" aria-label="Select 1. Brooklyn category" type="button" data-testid="categoryType-0-select">
+                    <button class="btn btn-primary" aria-label="Select 1. Brooklyn category" type="button" data-testid="categoryType-0-select" data-bs-toggle="collapse" data-bs-target="#Brooklyn" id="btnBrooklyn">
                         Select
                     </button>
                 </div>
@@ -218,7 +218,7 @@ body { background: #201e1f; background-image: none; }
                     <label for="categoryType-1" tabindex="0">
                         <span class="appointment-type-name">Braids (Philadelphia)</span>
                     </label>
-                    <button class="btn btn-primary" aria-label="Select Braids (Philadelphia) category" type="button" data-testid="categoryType-1-select">
+                    <button class="btn btn-primary" aria-label="Select Braids (Philadelphia) category" type="button" data-testid="categoryType-1-select" data-bs-toggle="collapse" data-bs-target="#Braids" id="btnBraids">
                         Select
                     </button>
                 </div>
@@ -227,7 +227,7 @@ body { background: #201e1f; background-image: none; }
                     <label for="categoryType-2" tabindex="0">
                         <span class="appointment-type-name">Locs</span>
                     </label>
-                    <button class="btn btn-primary" aria-label="Select Locs category" type="button" data-testid="categoryType-2-select">
+                    <button class="btn btn-primary" aria-label="Select Locs category" type="button" data-testid="categoryType-2-select" data-bs-toggle="collapse" data-bs-target="#Locs" id="btnLocs">
                         Select
                     </button>
                 </div>
@@ -236,7 +236,7 @@ body { background: #201e1f; background-image: none; }
                     <label for="categoryType-3" tabindex="0">
                         <span class="appointment-type-name">Stitch Braids</span>
                     </label>
-                    <button class="btn btn-primary" aria-label="Select Stitch Braids category" type="button" data-testid="categoryType-3-select">
+                    <button class="btn btn-primary" aria-label="Select Stitch Braids category" type="button" data-testid="categoryType-3-select" data-bs-toggle="collapse" data-bs-target="#Stitch" id="btnStitch">
                         Select
                     </button>
                 </div>
@@ -245,7 +245,7 @@ body { background: #201e1f; background-image: none; }
                     <label for="categoryType-4" tabindex="0">
                         <span class="appointment-type-name">Twists</span>
                     </label>
-                    <button class="btn btn-primary" aria-label="Select Twists category" type="button" data-testid="categoryType-4-select">
+                    <button class="btn btn-primary" aria-label="Select Twists category" type="button" data-testid="categoryType-4-select" data-bs-toggle="collapse" data-bs-target="#Twists" id="btnTwists">
                         Select
                     </button>
                 </div>
@@ -254,12 +254,48 @@ body { background: #201e1f; background-image: none; }
                     <label for="categoryType-5" tabindex="0">
                         <span class="appointment-type-name">Weaves</span>
                     </label>
-                    <button class="btn btn-primary" aria-label="Select Weaves category" type="button" data-testid="categoryType-5-select">
+                    <button class="btn btn-primary" aria-label="Select Weaves category" type="button" data-testid="categoryType-5-select" data-bs-toggle="collapse" data-bs-target="#Weaves" id="btnWeaves">
                         Select
                     </button>
                 </div>
 					
 			</div>
+				
+				
+<div class="collapse" id="Brooklyn">
+  <div class="card card-body" style="background-color: #201e1f;">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>	
+
+<div class="collapse" id="Braids">
+  <div class="card card-body" style="background-color: #201e1f;">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>				
+<div class="collapse" id="Locs">
+  <div class="card card-body" style="background-color: #201e1f;">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>	
+
+<div class="collapse" id="Stitch">
+  <div class="card card-body" style="background-color: #201e1f;">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>				
+<div class="collapse" id="Twists">
+  <div class="card card-body" style="background-color: #201e1f;">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>	
+
+<div class="collapse" id="Weaves">
+  <div class="card card-body" style="background-color: #201e1f;">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>					
+				
 
 <div class="select select-type">
                     <button class="back-button" type="button"><i class="fa fa-chevron-left"></i>View all appointments</button>
@@ -1240,6 +1276,38 @@ Price will differ based on specific size and length requests.</div>
 -->
 <!-- endinject -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>	
 
+<script>
+$(document).ready(function(){
+
+  $("#btnBrooklyn").click(function(){
+    //$(this).hide();
+	alert("smash it!");
+  });
+  $("#btnBraids").click(function(){
+    //$(this).hide();
+	alert("smash it!");
+  });
+  $("#btnLocs").click(function(){
+    //$(this).hide();
+	alert("smash it!");
+  });
+  $("#btnStitch").click(function(){
+    //$(this).hide();
+	alert("smash it!");
+  });
+  $("#btnTwists").click(function(){
+    //$(this).hide();
+	alert("smash it!");
+  });
+  $("#btnWeaves").click(function(){
+    //$(this).hide();
+	alert("smash it!");
+  });	
+  
+});
+</script>	
+	
 </body></html>
