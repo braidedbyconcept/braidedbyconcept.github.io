@@ -1283,7 +1283,8 @@ Price will differ based on specific size and length requests.</div>
 
 <script>
 $(document).ready(function(){
-
+	
+  $("#btnViewAll").hide();
   $("#btnBrooklyn").click(function(){
     	$("#btnBrooklyn").hide();
 	$("#categoryType-1-container").hide();
@@ -1292,6 +1293,7 @@ $(document).ready(function(){
 	$("#categoryType-4-container").hide();	 
 	$("#categoryType-5-container").hide();	  
 	//alert("smash it!");
+	$("#btnViewAll").show();
   });
   $("#btnBraids").click(function(){
     	$("#btnBraids").hide();
@@ -1301,6 +1303,7 @@ $(document).ready(function(){
 	$("#categoryType-4-container").hide();	 
 	$("#categoryType-5-container").hide();		  
 	//alert("smash it!");
+	$("#btnViewAll").show();
   });
   $("#btnLocs").click(function(){
     	$("#btnLocs").hide();
@@ -1310,6 +1313,7 @@ $(document).ready(function(){
 	$("#categoryType-4-container").hide();	 
 	$("#categoryType-5-container").hide();		  
 	//alert("smash it!");
+	$("#btnViewAll").show();
   });
   $("#btnStitch").click(function(){
     	$("#btnStitch").hide();
@@ -1319,6 +1323,7 @@ $(document).ready(function(){
 	$("#categoryType-4-container").hide();	 
 	$("#categoryType-5-container").hide();		  
 	//alert("smash it!");
+	$("#btnViewAll").show();
   });
   $("#btnTwists").click(function(){
     	$("#btnTwists").hide();
@@ -1328,6 +1333,7 @@ $(document).ready(function(){
 	$("#categoryType-0-container").hide();	 
 	$("#categoryType-5-container").hide();		  
 	//alert("smash it!");
+	$("#btnViewAll").show();
   });
   $("#btnWeaves").click(function(){
     	$("#btnWeaves").hide();
@@ -1337,6 +1343,7 @@ $(document).ready(function(){
 	$("#categoryType-4-container").hide();	 
 	$("#categoryType-0-container").hide();		  
 	//alert("smash it!");
+	$("#btnViewAll").show();
   });
   $("#btnViewAll").click(function(){    	
 	$("#categoryType-1-container").show();
@@ -1351,6 +1358,14 @@ $(document).ready(function(){
 	$("#btnStitch").show();
 	$("#btnTwists").show();
 	$("#btnWeaves").show();
+	$("#Brooklyn").hide();
+	$("#Braids").hide();
+	$("#Locs").hide();
+	$("#Stitch").hide();	  
+	$("#Twists").hide();	 	  
+	$("#Weaves").hide();
+	$("#category-title").show();
+	$("#btnViewAll").hide();
   });		
   
 });
