@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	
   $("#btnViewAll").hide();
+  $("#liketoschedule").hide();	
   $("#btnBrooklyn").click(function(){
     	$("#btnBrooklyn").hide();
 	$("#categoryType-1-container").hide();
@@ -11,10 +12,11 @@ $(document).ready(function(){
 	//alert("smash it!");
 	$("#btnViewAll").show();
 	$("#category-title").hide();
+	$("#liketoschedule").show();
 	  
-	$("#chooseappointment").addClass("active");
-	$("#yourinfo").removeClass("active");	
-	$("#confirmation").removeClass("active");	  
+	$("#chooseappointment").addClass("step-pick-appointment");
+	$("#yourinfo").addClass("step-pick-appointment");	
+	$("#confirmation").removeClass("step-pick-appointment");	  
 	  
   });
   $("#btnBraids").click(function(){
@@ -27,6 +29,7 @@ $(document).ready(function(){
 	//alert("smash it!");
 	$("#btnViewAll").show();
 	$("#category-title").hide();
+	$("#liketoschedule").show();
   });
   $("#btnLocs").click(function(){
     	$("#btnLocs").hide();
@@ -38,6 +41,7 @@ $(document).ready(function(){
 	//alert("smash it!");
 	$("#btnViewAll").show();
 	$("#category-title").hide();
+	$("#liketoschedule").show();
   });
   $("#btnStitch").click(function(){
     	$("#btnStitch").hide();
@@ -49,6 +53,7 @@ $(document).ready(function(){
 	//alert("smash it!");
 	$("#btnViewAll").show();
 	$("#category-title").hide();
+	$("#liketoschedule").show();
   });
   $("#btnTwists").click(function(){
     	$("#btnTwists").hide();
@@ -60,6 +65,7 @@ $(document).ready(function(){
 	//alert("smash it!");
 	$("#btnViewAll").show();
 	$("#category-title").hide();
+	$("#liketoschedule").show();
   });
   $("#btnWeaves").click(function(){
     	$("#btnWeaves").hide();
@@ -71,6 +77,7 @@ $(document).ready(function(){
 	//alert("smash it!");
 	$("#btnViewAll").show();
 	$("#category-title").hide();
+	$("#liketoschedule").show();
   });
   $("#btnViewAll").click(function(){    	
 	$("#categoryType-1-container").show();
@@ -93,6 +100,7 @@ $(document).ready(function(){
 	$("#Weaves").collapse("hide");
 	$("#category-title").show();
 	$("#btnViewAll").hide();
+	$("#liketoschedule").hide();
   });		
   
 });
