@@ -1,0 +1,93 @@
+$(document).ready(function(){
+	
+  $("#btnViewAll").hide();
+  $("#btnBrooklyn").click(function(){
+    	$("#btnBrooklyn").hide();
+	$("#categoryType-1-container").hide();
+	$("#categoryType-2-container").hide();
+	$("#categoryType-3-container").hide();
+	$("#categoryType-4-container").hide();	 
+	$("#categoryType-5-container").hide();	  
+	//alert("smash it!");
+	$("#btnViewAll").show();
+	$("#category-title").hide();
+  });
+  $("#btnBraids").click(function(){
+    	$("#btnBraids").hide();
+	$("#categoryType-0-container").hide();
+	$("#categoryType-2-container").hide();
+	$("#categoryType-3-container").hide();
+	$("#categoryType-4-container").hide();	 
+	$("#categoryType-5-container").hide();		  
+	//alert("smash it!");
+	$("#btnViewAll").show();
+	$("#category-title").hide();
+  });
+  $("#btnLocs").click(function(){
+    	$("#btnLocs").hide();
+	$("#categoryType-1-container").hide();
+	$("#categoryType-0-container").hide();
+	$("#categoryType-3-container").hide();
+	$("#categoryType-4-container").hide();	 
+	$("#categoryType-5-container").hide();		  
+	//alert("smash it!");
+	$("#btnViewAll").show();
+	$("#category-title").hide();
+  });
+  $("#btnStitch").click(function(){
+    	$("#btnStitch").hide();
+	$("#categoryType-1-container").hide();
+	$("#categoryType-2-container").hide();
+	$("#categoryType-0-container").hide();
+	$("#categoryType-4-container").hide();	 
+	$("#categoryType-5-container").hide();		  
+	//alert("smash it!");
+	$("#btnViewAll").show();
+	$("#category-title").hide();
+  });
+  $("#btnTwists").click(function(){
+    	$("#btnTwists").hide();
+	$("#categoryType-1-container").hide();
+	$("#categoryType-2-container").hide();
+	$("#categoryType-3-container").hide();
+	$("#categoryType-0-container").hide();	 
+	$("#categoryType-5-container").hide();		  
+	//alert("smash it!");
+	$("#btnViewAll").show();
+	$("#category-title").hide();
+  });
+  $("#btnWeaves").click(function(){
+    	$("#btnWeaves").hide();
+	$("#categoryType-1-container").hide();
+	$("#categoryType-2-container").hide();
+	$("#categoryType-3-container").hide();
+	$("#categoryType-4-container").hide();	 
+	$("#categoryType-0-container").hide();		  
+	//alert("smash it!");
+	$("#btnViewAll").show();
+	$("#category-title").hide();
+  });
+  $("#btnViewAll").click(function(){    	
+	$("#categoryType-1-container").show();
+	$("#categoryType-2-container").show();
+	$("#categoryType-3-container").show();
+	$("#categoryType-4-container").show();	 
+	$("#categoryType-0-container").show();		  
+	$("#categoryType-5-container").show();
+	$("#btnBrooklyn").show();
+	$("#btnBraids").show();
+	$("#btnLocs").show();
+	$("#btnStitch").show();
+	$("#btnTwists").show();
+	$("#btnWeaves").show();
+	$("#Brooklyn").collapse("hide");
+	$("#Braids").collapse("hide");
+	$("#Locs").collapse("hide");
+	$("#Stitch").collapse("hide");	  
+	$("#Twists").collapse("hide");	 	  
+	$("#Weaves").collapse("hide");
+	$("#category-title").show();
+	$("#btnViewAll").hide();
+  });		
+  
+});
