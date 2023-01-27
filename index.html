@@ -88,11 +88,11 @@ body { background: #201e1f; background-image: none; }
 
 				<div class="header">
 			<ol class="steps">
-				<li class="active step-pick-appointment"><a href="https://braidedbyconcept.github.io/">
+				<li class="active step-pick-appointment"><a href="https://braidedbyconcept.github.io/" id="chooseappointment">
 					Choose Appointment
 				</a></li>
-				<li class="step-forms"><a href="https://braidedbyconcept.github.io/#">Your Info</a></li>
-				<li class="step-confirmation"><a href="https://braidedbyconcept.github.io/#">Confirmation</a></li>
+				<li class="step-forms"><a href="https://braidedbyconcept.github.io/#" id="yourinfo">Your Info</a></li>
+				<li class="step-confirmation"><a href="https://braidedbyconcept.github.io/#" id="confirmation">Confirmation</a></li>
 			</ol>
 			
 <!--			
@@ -197,8 +197,6 @@ body { background: #201e1f; background-image: none; }
 				</div>
 			</div>
 
-			<input type="text" id="jump-to-top" style="display:none;height:10px;width:10px;border:none;background:transparent;opacity:0;overflow:hidden;">
-
 			<div class="pane pick-appointment-pane">
 				
 	<button class="back-button" type="button" id="btnViewAll"><i class="fa fa-chevron-left"></i>View all appointments</button>				
@@ -206,7 +204,7 @@ body { background: #201e1f; background-image: none; }
 					<div class="select select-category">
         <button class="back-button" type="button"><i class="fa fa-chevron-left"></i>View all categories</button>
 		<div id="category-title" class="select-label select-category-schedule-title">Choose a category... </div>
-					                <input type="radio" name="categoryType" id="categoryType-0">
+
                 <div id="categoryType-0-container" class="select-item babel-ignore category-label category-label">
                     <label for="categoryType-0" tabindex="0">
                         <span class="appointment-type-name">1. Brooklyn</span>
@@ -215,7 +213,7 @@ body { background: #201e1f; background-image: none; }
                         Select
                     </button>
                 </div>
-								                <input type="radio" name="categoryType" id="categoryType-1">
+
                 <div id="categoryType-1-container" class="select-item babel-ignore category-label category-label">
                     <label for="categoryType-1" tabindex="0">
                         <span class="appointment-type-name">Braids (Philadelphia)</span>
@@ -224,7 +222,7 @@ body { background: #201e1f; background-image: none; }
                         Select
                     </button>
                 </div>
-								                <input type="radio" name="categoryType" id="categoryType-2">
+
                 <div id="categoryType-2-container" class="select-item babel-ignore category-label category-label">
                     <label for="categoryType-2" tabindex="0">
                         <span class="appointment-type-name">Locs</span>
@@ -233,7 +231,7 @@ body { background: #201e1f; background-image: none; }
                         Select
                     </button>
                 </div>
-								                <input type="radio" name="categoryType" id="categoryType-3">
+
                 <div id="categoryType-3-container" class="select-item babel-ignore category-label category-label">
                     <label for="categoryType-3" tabindex="0">
                         <span class="appointment-type-name">Stitch Braids</span>
@@ -242,7 +240,7 @@ body { background: #201e1f; background-image: none; }
                         Select
                     </button>
                 </div>
-								                <input type="radio" name="categoryType" id="categoryType-4">
+
                 <div id="categoryType-4-container" class="select-item babel-ignore category-label category-label">
                     <label for="categoryType-4" tabindex="0">
                         <span class="appointment-type-name">Twists</span>
@@ -251,7 +249,7 @@ body { background: #201e1f; background-image: none; }
                         Select
                     </button>
                 </div>
-								                <input type="radio" name="categoryType" id="categoryType-5">
+
                 <div id="categoryType-5-container" class="select-item babel-ignore category-label category-label">
                     <label for="categoryType-5" tabindex="0">
                         <span class="appointment-type-name">Weaves</span>
@@ -265,35 +263,45 @@ body { background: #201e1f; background-image: none; }
 				
 				
 <div class="collapse" id="Brooklyn">
-  <div class="card card-body" style="background-color: #201e1f;">
+  <div class="card card-body" style="background-color: #201e1f; border: 1px solid #d1ae6e;">
+	  
+	<div class="select-item babel-ignore category-label category-label">
+		<label tabindex="0">
+			<span class="appointment-type-name">Weaves</span>
+		</label>
+		<button class="btn btn-primary" aria-label="Select Weaves category" type="button">
+                        Select
+		</button>
+	</div>	  
+	  
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>	
 
 <div class="collapse" id="Braids">
-  <div class="card card-body" style="background-color: #201e1f;">
+  <div class="card card-body" style="background-color: #201e1f; border: 1px solid #d1ae6e;">
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>				
 <div class="collapse" id="Locs">
-  <div class="card card-body" style="background-color: #201e1f;">
+  <div class="card card-body" style="background-color: #201e1f; border: 1px solid #d1ae6e;">
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>	
 
 <div class="collapse" id="Stitch">
-  <div class="card card-body" style="background-color: #201e1f;">
+  <div class="card card-body" style="background-color: #201e1f; border: 1px solid #d1ae6e;">
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>				
 <div class="collapse" id="Twists">
-  <div class="card card-body" style="background-color: #201e1f;">
+  <div class="card card-body" style="background-color: #201e1f; border: 1px solid #d1ae6e;">
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>	
 
 <div class="collapse" id="Weaves">
-  <div class="card card-body" style="background-color: #201e1f;">
+  <div class="card card-body" style="background-color: #201e1f; border: 1px solid #d1ae6e;">
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>
