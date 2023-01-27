@@ -11,6 +11,11 @@ $(document).ready(function(){
 	//alert("smash it!");
 	$("#btnViewAll").show();
 	$("#category-title").hide();
+	  
+	$("#chooseappointment").addClass("active");
+	$("#yourinfo").removeClass("active");	
+	$("#confirmation").removeClass("active");	  
+	  
   });
   $("#btnBraids").click(function(){
     	$("#btnBraids").hide();
