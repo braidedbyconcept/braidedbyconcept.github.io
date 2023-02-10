@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	alert("new development!");	
+	//alert("new development!");	
   $("#btnViewAll").hide();
   $("#liketoschedule").hide();	
   $("#btnBrooklyn").click(function(){
