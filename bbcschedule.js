@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	
+	alert("new development!");	
   $("#btnViewAll").hide();
   $("#liketoschedule").hide();	
   $("#btnBrooklyn").click(function(){
